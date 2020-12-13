@@ -1,0 +1,271 @@
+<!doctype refentry PUBLIC "-//OASIS//DTD DocBook V4.1//EN" [
+
+<!-- Process this file with docbook-to-man to generate an nroff manual
+     page: `docbook-to-man manpage.sgml > manpage.1'.  You may view
+     the manual page with: `docbook-to-man manpage.sgml | nroff -man |
+     less'.  A typical entry in a Makefile or Makefile.am is:
+
+manpage.1: manpage.sgml
+	docbook-to-man $< > $@
+  -->
+
+  <!-- Fill in your name for FIRSTNAME and SURNAME. -->
+  <!ENTITY dhfirstname "<firstname>Christian T.</firstname>">
+  <!ENTITY dhsurname   "<surname>Steigies</surname>">
+  <!-- Please adjust the date whenever revising the manpage. -->
+  <!ENTITY dhdate      "<date>2002-01-08</date>">
+  <!-- SECTION should be 1-8, maybe w/ subsection other parameters are
+       allowed: see man(7), man(1). -->
+  <!ENTITY dhsection   "<manvolnum>6</manvolnum>">
+  <!ENTITY dhemail     "<email>cts@debian.org</email>">
+  <!ENTITY dhusername  "Christian T. Steigies">
+  <!ENTITY dhucpackage "<refentrytitle>bumprace</refentrytitle>">
+  <!ENTITY dhpackage   "bumprace">
+
+  <!ENTITY debian      "<productname>Debian GNU/Linux</productname>">
+  <!ENTITY gnu         "<acronym>GNU</acronym>">
+]>
+
+<refentry>
+  <refentryinfo>
+    <address>
+      &dhemail;
+    </address>
+    <author>
+      &dhfirstname;
+      &dhsurname;
+    </author>
+    <copyright>
+      <year>2001</year>
+      <holder>&dhusername;</holder>
+    </copyright>
+    &dhdate;
+  </refentryinfo>
+  <refmeta>
+    &dhucpackage;
+
+    &dhsection;
+  </refmeta>
+  <refnamediv>
+    <refname>&dhpackage;</refname>
+
+    <refpurpose>a simple arcade game</refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <cmdsynopsis>
+      <command>&dhpackage;</command>
+
+      <arg><option>-f | --fullscreen</option></arg>
+      <arg><option>-w | --windowed</option></arg>
+      <arg><option>-s | --nosound</option></arg>
+      <arg><option>-n | --notfinal</option></arg>
+      <arg><option>-t | --noparticles</option></arg>
+      <arg><option>-o | --nofadeout</option></arg>
+      <arg><option>--precision</option></arg>
+      <arg><option>-h | --help</option></arg>
+
+    </cmdsynopsis>
+  </refsynopsisdiv>
+  <refsect1>
+    <title>DESCRIPTION</title>
+
+    <para>This manual page documents briefly the
+      <command>&dhpackage;</command> command.</para>
+
+    <para>This manual page was written for the &debian; distribution
+      because the original program does not have a manual page.
+      Instead, it has documentation in /usr/share/doc/bumprace/README.</para>
+
+    <para><command>&dhpackage;</command> a simple arcade game.</para>
+
+  </refsect1>
+  <refsect1>
+    <title>OPTIONS</title>
+
+    <para>This program follows the usual GNU command line syntax,
+      with long options starting with two dashes (`-').  A summary of
+      options is included below.</para>
+
+    <variablelist>
+
+      <varlistentry>
+        <term><option>-f</option>
+          <option>--fullscreen</option>
+        </term>
+        <listitem>
+          <para>Start in fullscreen mode (default).</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><option>-w</option>
+          <option>--windowed</option>
+        </term>
+        <listitem>
+          <para>Start in windowed mode.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><option>-s</option>
+          <option>--nosound</option>
+        </term>
+        <listitem>
+          <para>Start without sound.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><option>-n</option>
+          <option>--notfinal</option>
+        </term>
+        <listitem>
+          <para>No title screen (nice for developers).</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><option>-t</option>
+          <option>--noparticles</option>
+        </term>
+        <listitem>
+          <para>Turns off particles. Good for slow computers.</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><option>-o</option>
+          <option>--nofadeout</option>
+        </term>
+        <listitem>
+          <para>No fadeout after crash (for slow computers).</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term>
+          <option>--precision</option>
+        </term>
+        <listitem>
+          <para>Sets the precision of the collisions (default=10).</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><option>-h</option>
+          <option>--help</option>
+        </term>
+        <listitem>
+          <para>Show summary of options.</para>
+        </listitem>
+      </varlistentry>
+
+    </variablelist>
+  </refsect1>
+
+  <refsect1>
+    <title>KEYS</title>
+
+    <para>Player 1</para>
+
+    <variablelist>
+
+      <varlistentry>
+        <term><option>arrow keys</option>
+        </term>
+        <listitem>
+          <para>moving</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><option>right control</option>
+        </term>
+        <listitem>
+          <para>special ability</para>
+        </listitem>
+      </varlistentry>
+
+    </variablelist>
+
+    <para>Player 2</para>
+
+    <variablelist>
+
+      <varlistentry>
+        <term><option>a</option>
+        </term>
+        <listitem>
+          <para>left</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><option>d</option>
+        </term>
+        <listitem>
+          <para>right</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><option>w</option>
+        </term>
+        <listitem>
+          <para>thrust</para>
+        </listitem>
+      </varlistentry>
+
+      <varlistentry>
+        <term><option>TAB</option>
+        </term>
+        <listitem>
+          <para>special ability</para>
+        </listitem>
+      </varlistentry>
+
+    </variablelist>
+
+<!--
+               PLAYER 1
+               <arrow keys>                      moving
+               <right control>                   special ability
+
+               PLAYER 2
+               <a>                               left
+               <d>                               right
+               <w>                               thrust
+               <tab>                             special ability
+-->
+  </refsect1>
+
+  <refsect1>
+    <title>AUTHOR</title>
+
+    <para>This manual page was written by &dhusername; <&dhemail;> for
+      the &debian; system (but may be used by others).  Permission is
+      granted to copy, distribute and/or modify this document under
+      the terms of the <acronym>GNU</acronym> Free Documentation
+      License, Version 1.1 or any later version published by the Free
+      Software Foundation; with no Invariant Sections, no Front-Cover
+      Texts and no Back-Cover Texts.</para>
+
+  </refsect1>
+</refentry>
+
+<!-- Keep this comment at the end of the file
+Local variables:
+mode: sgml
+sgml-omittag:t
+sgml-shorttag:t
+sgml-minimize-attributes:nil
+sgml-always-quote-attributes:t
+sgml-indent-step:2
+sgml-indent-data:t
+sgml-parent-document:nil
+sgml-default-dtd-file:nil
+sgml-exposed-tags:nil
+sgml-local-catalogs:nil
+sgml-local-ecat-files:nil
+End:
+-->
